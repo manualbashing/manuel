@@ -1,5 +1,5 @@
 baseURL: "https://adityatelange.github.io/hugo-PaperMod/" # if your site is in 'https', then make sure your base url isn't written using 'http' otherwise your sitemap would contain http (as opposeed to https) URLs. This would affect Google indexing of your URLs.
-title: PaperMod
+title: Manuel Batsching
 paginate: 5
 theme: hugo-PaperMod
 
@@ -18,7 +18,8 @@ minify:
 
 languages:
     en:
-        languageName: "English"
+        languageName: ":en:"
+        languageAltTitle: English
         weight: 1
         taxonomies:
           category: categories
@@ -26,7 +27,7 @@ languages:
           series: series
         menu:
             main:
-                - name: Archive
+                - name: Blog
                   url: archives
                   weight: 5
                 - name: Search
@@ -35,10 +36,6 @@ languages:
                 - name: Tags
                   url: tags/
                   weight: 10
-                - name: WiKi
-                  url: https://github.com/adityatelange/hugo-PaperMod/wiki/
-                - name: Discord
-                  url: https://discord.gg/ahpmTvhVmp
 
     fr:
         languageName: ":fr:"
@@ -79,23 +76,6 @@ languages:
                 - name: NullLink
                   url: "#"
 
-    fa:
-        languagedirection: rtl
-        weight: 3
-        title: PaperMod RTL
-        homeInfoParams:
-            Title: "Hi there \U0001F44B"
-            Content: Welcome to RTL layout
-        taxonomies:
-          category: FAcategories
-          tag: FAtags
-          series: FAseries
-        menu:
-            main:
-                - name: FATags
-                  url: fatags
-                  weight: 10
-
 outputs:
     home:
         - HTML
@@ -127,19 +107,17 @@ params:
         title: Manuel Batsching
         imageUrl: "https://gravatar.com/userimage/19280508/65a6e53b4af118faa19f09e336bb3f92.jpeg?size=256"
         imageTitle: Gravatar Imagge goes here
-        imageWidth: 120
-        imageHeight: 120
+        imageWidth: 180
+        imageHeight: 180
         buttons:
-            - name: Archives
+            - name: Blog
               url: archives
             - name: Tags
               url: tags
 
     socialIcons:
         - name: Mastodon
-          url: "https://nerdculture.de/mba"
-        - name: KoFi
-          url: "https://ko-fi.com/adityatelange"
+          url: "https://nerdculture.de/@mba"
         - name: Rss
           url: "index.xml"
 
