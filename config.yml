@@ -44,7 +44,7 @@ languages:
         title: Manuel Batsching
         taxonomies:
           category: Decategories
-          tag: Detags
+          tag: tags
           series: Deseries
         menu:
             main:
