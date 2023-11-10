@@ -41,7 +41,7 @@ languages:
         languageName: "🇩🇪"
         languageAltTitle: German
         weight: 2
-        title: PaperModL2
+        title: Manuel Batsching
         taxonomies:
           category: Decategories
           tag: Detags
@@ -51,7 +51,7 @@ languages:
                 - name: Blog
                   url: archives
                   weight: 5
-                - name: Search
+                - name: Suche
                   url: search/
                   weight: 10
                 - name: Tags
@@ -94,8 +94,8 @@ params:
         buttons:
             - name: Blog
               url: archives
-            - name: Tags
-              url: tags
+            - name: Tech Notes
+              url: https://manualbashing.github.io
 
     socialIcons:
         - name: Mastodon
