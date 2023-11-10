@@ -124,27 +124,16 @@ params:
 
     profileMode:
         enabled: true
-        title: PaperMod
-        imageUrl: "#"
-        imageTitle: my image
-        # imageWidth: 120
-        # imageHeight: 120
+        title: Manuel Batsching
+        imageUrl: "https://gravatar.com/userimage/19280508/65a6e53b4af118faa19f09e336bb3f92.jpeg?size=256"
+        imageTitle: Gravatar Imagge goes here
+        imageWidth: 120
+        imageHeight: 120
         buttons:
             - name: Archives
               url: archives
             - name: Tags
               url: tags
-
-    homeInfoParams:
-        Title: "PaperMod"
-        Content: >
-            Welcome to demo of hugo's theme PaperMod.
-
-            - **PaperMod** is a simple but fast and responsive theme with useful feature-set that enhances UX.
-
-            - Do give a 🌟 on Github !
-
-            - PaperMod is based on theme [Paper](https://github.com/nanxiaobei/hugo-paper).
 
     socialIcons:
         - name: Mastodon
