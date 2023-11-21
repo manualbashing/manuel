@@ -1,6 +1,6 @@
 ---
 title: Obsidian Reference
-date: 2023-11-21T15:06:20
+date: 2023-11-21
 draft: false
 ---
 
