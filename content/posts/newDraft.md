@@ -1,7 +1,7 @@
 ---
 title: Obsidian Reference
 date: 2023-11-21T15:06:20
-draft: true
+draft: false
 ---
 
 # This is a test
