@@ -6,5 +6,5 @@ draft: true
 
 # This is a test
 
-![attachments/Pasted image 20231121152249.png](attachments/Pasted%20image%2020231121152249.png)
+![Pasted image 20231121153347.png](images/Pasted%20image%2020231121153347.png)
 
