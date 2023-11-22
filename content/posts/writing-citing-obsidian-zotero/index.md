@@ -14,7 +14,7 @@ In this post, I want to show you how to setup a basic system for academic writin
 - Adding literature references, which are organized in Zotero, to a markdown text.
 - Exporting this markdown text to Microsoft Word's DOCX[^1] format, including an automatically generated bibliography.
 
-{{< callout emoji="📎" text="I am preparing post in which I will try to explain, why you would want to do that." >}}
+{{< callout emoji="📎" text="In a later post I will try to explain, why you would want to do that." >}}
 ## Requirements
 
 For what follows I assume, that you have the following tools installed:
