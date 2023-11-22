@@ -24,26 +24,26 @@ draft: true
   - Use Better BibLaTex Format
   - Tick "Keep updated"
   
-  ![export-zotero-library.png](export-zotero-library.png)
+  ![export-zotero-library.png](images/export-zotero-library.png)
   - Save it to any path. I use `%AppData%/Roaming/obsidian`
     - But it can be any other path as long as it does not contain any spaces
       - This is due to a limitation in the Pandoc obsidian plugin: https://github.com/OliverBalfour/obsidian-pandoc/issues/159
     - It is useful to not put the file on any synced folder (OneDrive, Dropbox) to avoid sync conflicts
     - it can be anywhere where you will find it again:
     
-    ![export-zotero-library-path.png](export-zotero-library-path.png)
+    ![export-zotero-library-path.png](images/export-zotero-library-path.png)
     - Write this path down, we will use it a lot
 - In Obsidian 
   - Enable Community Plugins
   - Click Browse
   - install the "Citations" Plugin by Jon Gauthier: 
 
-  ![citations-plugin.png](citations-plugin.png)
+  ![citations-plugin.png](images/citations-plugin.png)
   - Click Install/Enable/Options
     - Change the Citation database format to "BibLaTex"
     - Change the Citation database path to the full path of the BibLaTex File that you have exported above.
 
-![citation-plugin-options.png](citation-plugin-options.png)
+![citation-plugin-options.png](images/citation-plugin-options.png)
 
 - In Obsidian open the command palette and run "Citations: Refresh citation database"
 - Create a new document in Obsidian 
@@ -64,7 +64,7 @@ draft: true
   -  [Pandoc - Installing pandoc](https://pandoc.org/installing.html)
 - In Obsidian Install the community plugin "Pandoc" by Oliver Balfour
 
-![pandoc-plugin.png](pandoc-plugin.png)
+![pandoc-plugin.png](images/pandoc-plugin.png)
 
   - Enable the plugin and click options
     - Change "Export files from HTML or markdown" to "Markdown"
@@ -92,4 +92,4 @@ draft: true
   - Enable and open the options
   - Set the "path to the bibliography file" to your exported BibLaTeX file
   
-  ![[images/pandoc-reference-list.gif]]
+  ![images/pandoc-reference-list.gif](images/pandoc-reference-list.gif)
