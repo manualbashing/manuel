@@ -9,6 +9,8 @@ cover:
     caption: "Zotero and Obsidian: BFF"
 ---
 
+
+
 - Why using Markdown?
 - We assume that MS Word will be needed for publishing.
   - We use Word only for formatting.
@@ -104,3 +106,8 @@ cover:
   - Set the "path to the bibliography file" to your exported BibLaTeX file
   
   ![images/pandoc-reference-list.gif](images/pandoc-reference-list.gif)
+  
+## Extra: Use a specific citation style
+
+- Default CSL is Harvard
+- You might need to use IEEE

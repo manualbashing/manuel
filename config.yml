@@ -32,7 +32,7 @@ languages:
                   weight: 5
                 - name: Archives
                   url: archives
-                  weight: 5
+                  weight: 10
                 - name: Search
                   url: search/
                   weight: 10
