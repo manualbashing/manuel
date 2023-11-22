@@ -2,6 +2,10 @@
 title: Writing and citing with Obsidian and Zotero
 date: 2023-11-22
 draft: true
+cover:
+    image: images/zotero.jpg
+    alt: "Zotero image"
+    caption: "Zotero image"
 ---
 
 - Why using Markdown?

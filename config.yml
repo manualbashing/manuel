@@ -72,7 +72,7 @@ params:
 
     defaultTheme: auto
     # disableThemeToggle: true
-    ShowShareButtons: true
+    ShowShareButtons: false
     ShowReadingTime: true
     # disableSpecial1stPost: true
     displayFullLangName: true
@@ -104,7 +104,7 @@ params:
           url: "index.xml"
 
     editPost:
-        URL: "https://github.com/adityatelange/hugo-PaperMod/tree/exampleSite/content"
+        URL: "https://github.com/manualbashing/manuel/tree/mother/content"
         Text: "Suggest Changes" # edit text
         appendFilePath: true # to append file path to Edit link
 
@@ -125,7 +125,8 @@ params:
     #     apple_touch_icon: "<link / abs url>"
     #     safari_pinned_tab: "<link / abs url>"
 
-    # cover:
+    cover:
+          relative: true
     #     hidden: true # hide everywhere but not in structured data
     #     hiddenInList: true # hide on list pages and home
     #     hiddenInSingle: true # hide on single page
@@ -158,7 +159,7 @@ privacy:
         simple: true
 
     twitter:
-        disabled: false
+        disabled: true
         enableDNT: true
         simple: true
 
