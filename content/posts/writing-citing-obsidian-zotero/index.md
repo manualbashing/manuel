@@ -3,9 +3,9 @@ title: Writing and citing with Obsidian and Zotero
 date: 2023-11-22
 draft: true
 cover:
-    image: images/zotero.jpg
-    alt: "Zotero image"
-    caption: "Zotero image"
+    image: images/zotero-obsidian-bff.jpg
+    alt: "A picture showing two men jumping together over a green field. Instead of heads they have the Zotero and Obsidian logo respectively."
+    caption: "Zotero and Obsidian: BFF"
 ---
 
 - Why using Markdown?
