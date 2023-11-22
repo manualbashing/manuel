@@ -9,17 +9,28 @@ cover:
     caption: "Zotero and Obsidian: BFF"
 ---
 
+In this post, I want to show you how to setup a basic system for academic writing in Obsidian. This will be a step-by-step guide, where we start with an empty vault, and enable the following features:
 
+- Adding literature references, which are organized in Zotero, to a markdown text.
+- Exporting this markdown text to Microsoft Word's DOCX[^1] format, including an automatically generated bibliography.
 
-- Why using Markdown?
-- We assume that MS Word will be needed for publishing.
-  - We use Word only for formatting.
-  - The authoritative source for the content remains the markdown file.
-- We assume you have Obsidian and Zotero installed
-  - [Download - Obsidian](https://obsidian.md/download)
-  - [Zotero | Downloads](https://www.zotero.org/download/)
+{{< callout emoji="📎" text="I am preparing post in which I will try to explain, why you would want to do that." >}}
+## Requirements
 
+For what follows I assume, that you have the following tools installed:
+
+  - [Obsidian](https://obsidian.md/download)
+  - [Zotero](https://www.zotero.org/download/)
+  - [Pandoc](https://pandoc.org/installing.html)
+
+The following instructions are written on a system using Microsoft Windows 11, but none of the tools are strictly platform dependent. All this is also possible on both MacOS and your favorite Linux distribution. 
 ## Use citations from Zotero in Obsidian
+
+There are currently two plugins that I know of that people use to integrate Zotero and Obsidian:
+- [mgmeyers/obsidian-zotero-integration](https://github.com/mgmeyers/obsidian-zotero-integration)
+- [hans/obsidian-citation-plugin](https://github.com/hans/obsidian-citation-plugin)
+
+{{< callout emoji="📎" text="In a later post I am planning a feature comparsion between these two plugins but for now, I will focus on the citation plugin as this is the only one that I currently have experience with." >}}
 
 - Install the BetterBibTex Plugin
   - [Installation - Better BibTeX for Zotero (retorque.re)](https://retorque.re/zotero-better-bibtex/installation/index.html)
@@ -68,7 +79,7 @@ cover:
 ## Export a markdown document with citations to MS Word
 
 - Install Pandoc
-  -  [Pandoc - Installing pandoc](https://pandoc.org/installing.html)
+
 - In Obsidian Install the community plugin "Pandoc" by Oliver Balfour
 
 ![pandoc-plugin.png](images/pandoc-plugin.png)
@@ -111,3 +122,5 @@ cover:
 
 - Default CSL is Harvard
 - You might need to use IEEE
+
+[^1]: Ot a lot of other output formats like LaTeX or epub. But we stick with Word for now, as that is what I assume most people are familiar with.
