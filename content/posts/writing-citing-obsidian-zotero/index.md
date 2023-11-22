@@ -68,13 +68,19 @@ draft: true
 
   - Enable the plugin and click options
     - Change "Export files from HTML or markdown" to "Markdown"
-    - Add the following to "Extra Pandoc Arguments": `-s --toc --citeproc --metadata bibliography="C:\Users\YOURUSER\AppData\Roaming\obsidian\MyLibrary.bib"`
-    - Use as the Path to the bibliography the full path to your BibLaTex file.
+    Add the following to "Extra Pandoc Arguments":
+
+```shell
+-s --toc --citeproc --metadata bibliography="C:\Users\YOURUSER\AppData\Roaming\obsidian\MyLibrary.bib"
+```
+
+- Use as the Path to the bibliography the full path to your BibLaTex file.
     
-        ![pandoc-plugin-options.png](pandoc-plugin-options.png)
+![pandoc-plugin-options.png](images/pandoc-plugin-options.png)
     
-  - $ **Note:** If the Plugin says, that Pandoc cannot be found in your path, it helps to restart Obsidian
-  - Again make sure that the path 
+   > **Note:** If the Plugin says, that Pandoc cannot be found in your path, it helps to restart Obsidian
+  
+  - Again make sure that the path does not contain spaces.
 
 - Go to the document that has the citations from an earlier step.
   - From the command menu choose "Pandoc Plugin: Export as Word document"
@@ -87,7 +93,7 @@ draft: true
 
 - Install the Pandoc Reference List Plugin by mgmeyers:
   
-  ![pandoc-reference-list-plugin.png](pandoc-reference-list-plugin.png)
+  ![pandoc-reference-list-plugin.png](images/pandoc-reference-list-plugin.png)
   
   - Enable and open the options
   - Set the "path to the bibliography file" to your exported BibLaTeX file
