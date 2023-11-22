@@ -27,15 +27,18 @@ languages:
           series: series
         menu:
             main:
+                - name: Posts
+                  url: posts
+                  weight: 5
                 - name: Archives
                   url: archives
                   weight: 5
                 - name: Search
                   url: search/
                   weight: 10
-                - name: Tags
-                  url: tags/
-                  weight: 10
+                # - name: Tags
+                #   url: tags/
+                #   weight: 10
 
     de:
         languageName: "🇩🇪"
@@ -48,15 +51,18 @@ languages:
           series: Deseries
         menu:
             main:
+                - name: Posts
+                  url: posts
+                  weight: 5
                 - name: Archiv
                   url: archives
-                  weight: 5
+                  weight: 10
                 - name: Suche
                   url: search/
                   weight: 10
-                - name: Tags
-                  url: tags/
-                  weight: 10
+                # - name: Tags
+                #   url: tags/
+                #   weight: 10
 
 outputs:
     home:
@@ -77,7 +83,7 @@ params:
     # disableSpecial1stPost: true
     displayFullLangName: true
     ShowPostNavLinks: true
-    ShowBreadCrumbs: true
+    ShowBreadCrumbs: false
     ShowCodeCopyButtons: true
     ShowRssButtonInSectionTermList: true
     ShowToc: true
