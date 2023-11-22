@@ -33,7 +33,7 @@ languages:
                 - name: Posts
                   url: posts
                   weight: 10
-                - name: Archives
+                - name: Archive
                   url: archives
                   weight: 10
                 - name: Search
