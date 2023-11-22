@@ -81,19 +81,21 @@ params:
     ShowCodeCopyButtons: true
     ShowRssButtonInSectionTermList: true
     ShowToc: true
+    TocOpen: true
+    
     # comments: false
     images: ["papermod-cover.png"]
 
     profileMode:
         enabled: true
         title: Manuel Batsching
-        imageUrl: "https://gravatar.com/userimage/19280508/65a6e53b4af118faa19f09e336bb3f92.jpeg?size=256"
-        imageTitle: Gravatar Imagge goes here
+        imageUrl: "https://gravatar.com/userimage/19280508/65a6e53b4af118faa19f09e336bb3f92.jpeg?size=180"
+        imageTitle: My Gravatar Image
         imageWidth: 180
         imageHeight: 180
         buttons:
-            - name: Blog
-              url: archives
+            - name: Personal Blog
+              url: posts
             - name: Tech Notes
               url: https://manualbashing.github.io
 
