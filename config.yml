@@ -32,7 +32,7 @@ languages:
                   weight: 5
                 - name: Posts
                   url: posts
-                  weight: 5
+                  weight: 10
                 - name: Archives
                   url: archives
                   weight: 10
@@ -43,32 +43,32 @@ languages:
                 #   url: tags/
                 #   weight: 10
 
-    de:
-        languageName: "🇩🇪"
-        languageAltTitle: German
-        weight: 2
-        title: Manuel Batsching
-        taxonomies:
-          category: Decategories
-          tag: tags
-          series: Deseries
-        menu:
-            main:
-                - name: Start
-                  url: /
-                  weight: 5
-                - name: Posts
-                  url: posts
-                  weight: 5
-                - name: Archiv
-                  url: archives
-                  weight: 10
-                - name: Suche
-                  url: search/
-                  weight: 10
-                # - name: Tags
-                #   url: tags/
-                #   weight: 10
+    # de:
+    #     languageName: "🇩🇪"
+    #     languageAltTitle: German
+    #     weight: 2
+    #     title: Manuel Batsching
+    #     taxonomies:
+    #       category: Decategories
+    #       tag: tags
+    #       series: Deseries
+    #     menu:
+    #         main:
+    #             - name: Start
+    #               url: /
+    #               weight: 5
+    #             - name: Posts
+    #               url: posts
+    #               weight: 5
+    #             - name: Archiv
+    #               url: archives
+    #               weight: 10
+    #             - name: Suche
+    #               url: search/
+    #               weight: 10
+    #             # - name: Tags
+    #             #   url: tags/
+    #             #   weight: 10
 
 outputs:
     home:
