@@ -27,6 +27,9 @@ languages:
           series: series
         menu:
             main:
+                - name: Home
+                  url: /
+                  weight: 5
                 - name: Posts
                   url: posts
                   weight: 5
@@ -51,6 +54,9 @@ languages:
           series: Deseries
         menu:
             main:
+                - name: Start
+                  url: /
+                  weight: 5
                 - name: Posts
                   url: posts
                   weight: 5
