@@ -1,6 +1,7 @@
 ---
 title: Writing and citing with Obsidian and Zotero
 date: 2023-11-22
+author: Manuel Batsching
 draft: true
 cover:
     image: images/zotero-obsidian-bff.jpg

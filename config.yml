@@ -27,7 +27,7 @@ languages:
           series: series
         menu:
             main:
-                - name: Blog
+                - name: Archives
                   url: archives
                   weight: 5
                 - name: Search
@@ -48,7 +48,7 @@ languages:
           series: Deseries
         menu:
             main:
-                - name: Blog
+                - name: Archiv
                   url: archives
                   weight: 5
                 - name: Suche
@@ -66,8 +66,8 @@ outputs:
 
 params:
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
-    description: "Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod"
-    author: Theme PaperMod
+    description: "Manuel Batsching - Personal Blog"
+    author: Manuel Batsching
     # author: ["Me", "You"] # multiple authors
 
     defaultTheme: auto
