@@ -19,9 +19,12 @@
         margin-left: 0.5em;
       }
     }
+    #emoji {
+        font-size: 2em;
+    }
   </style>
-  <div id="callout" style="">
-    <div>{{ .Get "emoji" }}</div>
+  <div id="callout">
+    <div id="emoji">{{ .Get "emoji" }}</div>
       <div id="callout-inner">
       {{ .Get "text" }}
     </div>

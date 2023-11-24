@@ -123,4 +123,4 @@ There are currently two plugins that I know of that people use to integrate Zote
 - Default CSL is Harvard
 - You might need to use IEEE
 
-[^1]: Ot a lot of other output formats like LaTeX or epub. But we stick with Word for now, as that is what I assume most people are familiar with.
+[^1]: Or a lot of other output formats like LaTeX or epub. But we stick with Word for now, as that is what I assume most people are familiar with.
