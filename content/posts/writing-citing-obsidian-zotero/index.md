@@ -23,19 +23,12 @@ For what follows I assume, that you have the following tools installed:
   - [Zotero](https://www.zotero.org/download/)
   - [Pandoc](https://pandoc.org/installing.html)
 
-The following instructions are written on a system using Microsoft Windows 11, but none of the tools are strictly platform dependent. All this is also possible on both MacOS and your favorite Linux distribution. 
+The following instructions are written on a system using Microsoft Windows 11, but none of the tools are strictly platform dependent. All this is also possible on both macOS and your favorite Linux distribution. 
 ## Use citations from Zotero in Obsidian
 
-There are currently two plugins that I know of that people use to integrate Zotero and Obsidian:
-- [mgmeyers/obsidian-zotero-integration](https://github.com/mgmeyers/obsidian-zotero-integration)
-- [hans/obsidian-citation-plugin](https://github.com/hans/obsidian-citation-plugin)
+In order to make your Zotero play nicely with the Obisidian plugin, that we will be using, you need to install the Better BibTex plugin in Zotero: [Installation - Better BibTeX for Zotero (retorque.re)](https://retorque.re/zotero-better-bibtex/installation/index.html). 
 
-{{< callout emoji="📎" text="In a later post I am planning a feature comparsion between these two plugins but for now, I will focus on the citation plugin as this is the only one that I currently have experience with." >}}
-
-- Install the BetterBibTex Plugin
-  - [Installation - Better BibTeX for Zotero (retorque.re)](https://retorque.re/zotero-better-bibtex/installation/index.html)
-  - Download the latest release in XPI format
-  - Follow the installation instructions in the link above
+If you are not familiar with the process of installing Zotero plugins, make sure you download the latest version in XPI format and follow the installation instructions in the link above.
 
 - Export Library to BibLaTex file
   - Choose File > Export Library
@@ -54,7 +47,7 @@ There are currently two plugins that I know of that people use to integrate Zote
 - In Obsidian 
   - Enable Community Plugins
   - Click Browse
-  - install the "Citations" Plugin by Jon Gauthier: 
+  - install the "Citations" Plugin by Jon Gauthier[^2]: 
 
   ![citations-plugin.png](images/citations-plugin.png)
   - Click Install/Enable/Options
@@ -123,4 +116,5 @@ There are currently two plugins that I know of that people use to integrate Zote
 - Default CSL is Harvard
 - You might need to use IEEE
 
-[^1]: Or a lot of other output formats like LaTeX or epub. But we stick with Word for now, as that is what I assume most people are familiar with.
+[^1]: Or a lot of other output formats like LaTeX or EPUB. But we stick with Word for now, as that is what I assume most people are familiar with.
+[^2]: The Zotero integration plugin ([mgmeyers/obsidian-zotero-integration](https://github.com/mgmeyers/obsidian-zotero-integration)) also seems to be a popular choice. For this post, I will focus on the citation plugin, as this is the only one that I currently have experience with.
