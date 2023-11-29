@@ -31,14 +31,14 @@ In order to make your Zotero play nicely with the Obisidian plugin that we will 
 ### Export the Zotero library in BibTeX format
 
 Once the plugin is installed create BibTeX based export of your library by performing the following steps:
-- Click `[File] > [Export Library]`:
+- Click `[File]` > `[Export Library]`:
 - Make sure you set the Format to `Better BibLaTeX`
 - Tick the `Keep updated` box
 
   ![export-zotero-library.png](images/export-zotero-library.png)
 You will be prompted to choose a file location under which you want to save the file. I prefer to use the path `%AppData%\Roaming\obsidian` under Windows, but it can really be any path that you like.
 
-{{ % callout emoji="☝️" text="Make sure that the path and file name **does not include** any spaces. This is due to a  limitation in the Pandoc obsidian plugin ([see this issue](https://github.com/OliverBalfour/obsidian-pandoc/issues/159)) for details." % }}
+{{% callout emoji="☝️" text="Make sure that the path and file name **does not include** any spaces. This is due to a  limitation in the Pandoc obsidian plugin ([see this issue](https://github.com/OliverBalfour/obsidian-pandoc/issues/159)) for details." %}}
 
 ![export-zotero-library-path.png](images/export-zotero-library-path.png)
 
@@ -49,7 +49,7 @@ Be sure to write down the full path to your exported library file, as we will ne
 In Obsidian go to settings and enable Community plugins. Once that is done, click `[Browse]` and search for the "Citations" Plugin by Jon Gauthier:[^2]
 
   ![citations-plugin.png](images/citations-plugin.png)
-  Click `[Install] > [Enable] > [Options]` to install and enable the plugin and to open the settings screen. In the settings do the following:
+  Click `[Install]` > `[Enable]` > `[Options]` to install and enable the plugin and to open the settings screen. In the settings do the following:
 - Change the value of `Citation database format` to `BibLaTeX`
 - Change the value of `Citation database path` to the full path of the BibLaTex File that you have exported above.
 
