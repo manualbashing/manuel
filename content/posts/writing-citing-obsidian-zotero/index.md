@@ -4,17 +4,15 @@ date: 2023-11-22
 author: Manuel Batsching
 draft: true
 cover:
-    image: images/zotero-obsidian-bff.jpg
-    alt: "A picture showing two men jumping together over a green field. Instead of heads they have the Zotero and Obsidian logo respectively."
-    caption: "Zotero and Obsidian: BFF"
+  image: images/zotero-obsidian-bff.jpg
+  alt: A picture showing two men jumping together over a green field. Instead of heads they have the Zotero and Obsidian logo respectively.
+  caption: "Zotero and Obsidian: BFF"
 ---
 
-In this post, I want to show you how to setup a basic system for academic writing in Obsidian. This will be a step-by-step guide, where we start with an empty vault, and enable the following features:
+In this post, I want to show you how to setup a very basic system for academic writing in Obsidian. This will be a step-by-step guide, where we start with an empty vault, and enable the following features:
 
 - Adding literature references, which are organized in Zotero, to a markdown text.
 - Exporting this markdown text to Microsoft Word's DOCX[^1] format, including an automatically generated bibliography.
-
-{{< callout emoji="📎" text="In a later post I will try to explain, why you would want to do that." >}}
 ## Requirements
 
 For what follows I assume, that you have the following tools installed:
@@ -24,35 +22,36 @@ For what follows I assume, that you have the following tools installed:
   - [Pandoc](https://pandoc.org/installing.html)
 
 The following instructions are written on a system using Microsoft Windows 11, but none of the tools are strictly platform dependent. All this is also possible on both macOS and your favorite Linux distribution. 
+
+To keep this blog post focused, I will assume, that you are already a bit familiar with Obsidian and Zotero.
 ## Use citations from Zotero in Obsidian
 
-In order to make your Zotero play nicely with the Obisidian plugin, that we will be using, you need to install the Better BibTex plugin in Zotero: [Installation - Better BibTeX for Zotero (retorque.re)](https://retorque.re/zotero-better-bibtex/installation/index.html). 
+In order to make your Zotero play nicely with the Obisidian plugin that we will be using, you need to install the Better BibTex plugin in Zotero: [Installation - Better BibTeX for Zotero (retorque.re)](https://retorque.re/zotero-better-bibtex/installation/index.html). If you are unfamiliar with the process of installing Zotero plugins, be sure to download the latest version in XPI format and follow the installation instructions at the link above.
 
-If you are not familiar with the process of installing Zotero plugins, make sure you download the latest version in XPI format and follow the installation instructions in the link above.
+### Export the Zotero library in BibTeX format
 
-- Export Library to BibLaTex file
-  - Choose File > Export Library
-  - Use Better BibLaTex Format
-  - Tick "Keep updated"
-  
+Once the plugin is installed create BibTeX based export of your library by performing the following steps:
+- Click `[File] > [Export Library]`:
+- Make sure you set the Format to `Better BibLaTeX`
+- Tick the `Keep updated` box
+
   ![export-zotero-library.png](images/export-zotero-library.png)
-  - Save it to any path. I use `%AppData%/Roaming/obsidian`
-    - But it can be any other path as long as it does not contain any spaces
-      - This is due to a limitation in the Pandoc obsidian plugin: https://github.com/OliverBalfour/obsidian-pandoc/issues/159
-    - It is useful to not put the file on any synced folder (OneDrive, Dropbox) to avoid sync conflicts
-    - it can be anywhere where you will find it again:
-    
-    ![export-zotero-library-path.png](images/export-zotero-library-path.png)
-    - Write this path down, we will use it a lot
-- In Obsidian 
-  - Enable Community Plugins
-  - Click Browse
-  - install the "Citations" Plugin by Jon Gauthier[^2]: 
+You will be prompted to choose a file location under which you want to save the file. I prefer to use the path `%AppData%\Roaming\obsidian` under Windows, but it can really be any path that you like.
+
+{{< callout emoji="☝️" text="Make sure that the path and file name **does not include** any spaces. This is due to a  limitation in the Pandoc obsidian plugin ([see this issue](https://github.com/OliverBalfour/obsidian-pandoc/issues/159) for details." >}}
+
+![export-zotero-library-path.png](images/export-zotero-library-path.png)
+
+Be sure to write down the full path to your exported library file, as we will need it later.
+
+### Enable and configure the citation plugin in Obsidian
+
+In Obsidian go to settings and enable Community plugins. Once that is done, click `[Browse]` and search for the "Citations" Plugin by Jon Gauthier:[^2]
 
   ![citations-plugin.png](images/citations-plugin.png)
-  - Click Install/Enable/Options
-    - Change the Citation database format to "BibLaTex"
-    - Change the Citation database path to the full path of the BibLaTex File that you have exported above.
+  Click `[Install] > [Enable] > [Options]` to install and enable the plugin and to open the settings screen. In the settings do the following:
+- Change the value of `Citation database format` to `BibLaTeX`
+- Change the value of `Citation database path` to the full path of the BibLaTex File that you have exported above.
 
 ![citation-plugin-options.png](images/citation-plugin-options.png)
 
