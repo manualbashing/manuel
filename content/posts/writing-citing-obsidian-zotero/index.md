@@ -38,7 +38,7 @@ Once the plugin is installed create BibTeX based export of your library by perfo
   ![export-zotero-library.png](images/export-zotero-library.png)
 You will be prompted to choose a file location under which you want to save the file. I prefer to use the path `%AppData%\Roaming\obsidian` under Windows, but it can really be any path that you like.
 
-{{ callout emoji="☝️" text="Make sure that the path and file name **does not include** any spaces. This is due to a  limitation in the Pandoc obsidian plugin ([see this issue](https://github.com/OliverBalfour/obsidian-pandoc/issues/159) for details." }}
+{{ % callout emoji="☝️" text="Make sure that the path and file name **does not include** any spaces. This is due to a  limitation in the Pandoc obsidian plugin ([see this issue](https://github.com/OliverBalfour/obsidian-pandoc/issues/159)) for details." % }}
 
 ![export-zotero-library-path.png](images/export-zotero-library-path.png)
 
