@@ -9,10 +9,10 @@ cover:
   caption: "Zotero and Obsidian: BFF"
 ---
 
-In this post, I want to show you how to setup a very basic system for academic writing in Obsidian. This will be a step-by-step guide, where we start with an empty vault, and enable the following features:
+In this post, I want to show you how to set up a very basic system for academic writing in Obsidian. This will be a step-by-step guide, where we start with an empty vault, and enable the following features:
 
-- Adding literature references, which are organized in Zotero, to a markdown text.
-- Exporting this markdown text to Microsoft Word's DOCX[^1] format, including an automatically generated bibliography.
+- Adding literature references, which are organized in Zotero, to a Markdown text.
+- Exporting this Markdown text to Microsoft Word's DOCX[^1] format, including an automatically generated bibliography.
 ## Requirements
 
 For what follows I assume, that you have the following tools installed:
@@ -30,7 +30,7 @@ In order to make your Zotero play nicely with the Obisidian plugin that we will 
 
 ### Export the Zotero library in BibTeX format
 
-Once the plugin is installed create BibTeX based export of your library by performing the following steps:
+Once the plugin is installed, create BibTeX based export of your library by performing the following steps:
 - Click `[File]` > `[Export Library]`:
 - Make sure you set the Format to `Better BibLaTeX`
 - Tick the `Keep updated` box
@@ -46,7 +46,7 @@ You will be prompted to choose a file location under which you want to save the 
 
 ### Enable and configure the citation plugin in Obsidian
 
-In Obsidian go to settings and enable Community plugins. Once that is done, click `[Browse]` and search for the "Citations" Plugin by Jon Gauthier:[^2]
+In Obsidian, go to settings and enable Community plugins. Once that is done, click `[Browse]` and search for the "Citations" plugin by Jon Gauthier:[^2]
 
   ![citations-plugin.png](images/citations-plugin.png)
   Click `[Install]` > `[Enable]` > `[Options]` to install and enable the plugin and to open the settings screen. In the settings do the following:
@@ -58,15 +58,15 @@ In Obsidian go to settings and enable Community plugins. Once that is done, clic
 Close the settings and open the Obsidian command palette to run `Citations: Refresh citation database`.
 ### Insert your first citation
 
-That that Zotero an Obsidian are configured, create a new markdown file and do the following:
+Now that Zotero and Obsidian are configured, create a new markdown file and do the following:
 
 - Place the cursor anywhere in the file
 - From the command palette run `Citations: Insert Markdown citation`
 - This will show a popup from which the citations can be selected.
-- Hit enter to select any of the citations
+- Hit enter to select any of the citations.
 
  ![images/add-first-citations.gif](images/add-first-citations.gif)
-This will insert the citation key in the [Pandoc Citation syntax](https://pandoc.org/chunkedhtml-demo/8.20-citation-syntax.html): `[@key]`.  See the linked documenation for how this syntax works. The following patterns are what I personally use most of the time:
+This will insert the citation key in the [Pandoc Citation syntax](https://pandoc.org/chunkedhtml-demo/8.20-citation-syntax.html): `[@key]`.  See the linked documentation for how this syntax works. The following patterns are what I personally use most of the time:
 - Citation with page number: `[@smith1992, p. 12]`
 - Citation with page number and footnote `[@smith1992, p. 14, fn. 2 ]`
 - Multiple citations with page number: `[@smith1992, p. 12; @jones1992, p. 5]`
@@ -76,26 +76,27 @@ This will insert the citation key in the [Pandoc Citation syntax](https://pandoc
 
 ## Export a markdown document with citations to MS Word
 
-- Install Pandoc
-- In Obsidian Install the community plugin "Pandoc" by Oliver Balfour
+Now let's see our system in action, by exporting it to a more familiar format. To makes this happen, you need to make sure, that you have [Pandoc](https://pandoc.org/installing.html) installed.
+
+In Obsidian, go to settings and then Community plugins. Click `[Browse]` and search for the  "Pandoc" plugin by Oliver Balfour.
 
 ![pandoc-plugin.png](images/pandoc-plugin.png)
 
-  - Enable the plugin and click options
-    - Change "Export files from HTML or markdown" to "Markdown"
-    Add the following to "Extra Pandoc Arguments":
+ Click `[Install]` > `[Enable]` > `[Options]` to install and enable the plugin and to open the settings screen. In the settings, do the following:
+ - Change the value of `Export files from HTML or markdown` to `Markdown`
+ - Add the following to "`Extra Pandoc Arguments`:
 
-```shell
--s --toc --citeproc --metadata bibliography="C:\Users\YOURUSER\AppData\Roaming\obsidian\MyLibrary.bib"
-```
+    ```shell
+    -s --toc --citeproc --metadata bibliography="C:\Users\YOURUSER\AppData\Roaming\obsidian\MyLibrary.bib"
+    ```
 
 - Use as the Path to the bibliography the full path to your BibLaTex file.
     
 ![pandoc-plugin-options.png](images/pandoc-plugin-options.png)
     
-   > **Note:** If the Plugin says, that Pandoc cannot be found in your path, it helps to restart Obsidian
+{{% callout emoji="🤓" text="If the Plugin says, that Pandoc cannot be found in your path, it helps to restart Obsidian" %}}
   
-  - Again make sure that the path does not contain spaces.
+- Again, make sure that the path does not contain spaces.
 
 - Go to the document that has the citations from an earlier step.
   - From the command menu choose "Pandoc Plugin: Export as Word document"
