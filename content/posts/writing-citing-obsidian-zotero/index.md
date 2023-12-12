@@ -42,8 +42,7 @@ You will be prompted to choose a file location under which you want to save the 
 
 ![export-zotero-library-path.png](images/export-zotero-library-path.png)
 
-Be sure to write down the full path to your exported library file, as we will need it later.
-
+{{% callout emoji="😉" text="Be sure to write down the full path to your exported library file, as we will need it later." %}}
 ### Enable and configure the citation plugin in Obsidian
 
 In Obsidian go to settings and enable Community plugins. Once that is done, click `[Browse]` and search for the "Citations" Plugin by Jon Gauthier:[^2]
@@ -55,23 +54,27 @@ In Obsidian go to settings and enable Community plugins. Once that is done, clic
 
 ![citation-plugin-options.png](images/citation-plugin-options.png)
 
-- In Obsidian open the command palette and run "Citations: Refresh citation database"
-- Create a new document in Obsidian 
-  - Any Markdown file will do
-  - It does not matter how it is called
-  - Place the cursor anywhere in the file
-- From the command palette run "Citation: Insert Markdown citation"
-  - This will show a popup from which the citations can be selected.
+Close the settings and open the Obsidian command palette to run `Citations: Refresh citation database`.
+### Insert your first citation
+
+That that Zotero an Obsidian are configured, create a new markdown file and do the following:
+
+- Place the cursor anywhere in the file
+- From the command palette run `Citations: Insert Markdown citation`
+- This will show a popup from which the citations can be selected.
+- Hit enter to select any of the citations
 
  ![images/add-first-citations.gif](images/add-first-citations.gif)
-  - This will insert the citation key in the following syntax `[@key]`. You can add page numbers after the comma; `[@key, p. 12]`
-  - If you want to mention the article in the style Author (year). "According to Smith (1992) bla... " remove the brackets: `"According to @smith1992 bla..."`
-  - See here for more details: [Pandoc Citation syntax](https://pandoc.org/chunkedhtml-demo/8.20-citation-syntax.html)
-  - Also you might want to set yourself a convenient hotkey for the "Insert markdown citation command"
+This will insert the citation key in the [Pandoc Citation syntax](https://pandoc.org/chunkedhtml-demo/8.20-citation-syntax.html): `[@key]`.  See the linked documenation for how this syntax works. The following patterns are what I personally use most of the time:
+- Citation with page number: `[@smith1992, p. 12]`
+- Citation with page number and footnote `[@smith1992, p. 14, fn. 2 ]`
+- Multiple citations with page number: `[@smith1992, p. 12; @jones1992, p. 5]`
+- Inline citation `"According to @smith1992 bla..."`
+
+{{% callout emoji="📎" text="Also you might want to set yourself a convenient hotkey for the "Insert markdown citation command". I am using `Ctrl-O`. " %}}
 ## Export a markdown document with citations to MS Word
 
 - Install Pandoc
-
 - In Obsidian Install the community plugin "Pandoc" by Oliver Balfour
 
 ![pandoc-plugin.png](images/pandoc-plugin.png)
