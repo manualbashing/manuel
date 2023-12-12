@@ -73,6 +73,7 @@ This will insert the citation key in the [Pandoc Citation syntax](https://pandoc
 - Inline citation `"According to @smith1992 bla..."`
 
 {{% callout emoji="📎" text="Also you might want to set yourself a convenient hotkey for the `Citations: Insert markdown citation` command. I am using `Ctrl-O` " %}}
+
 ## Export a markdown document with citations to MS Word
 
 - Install Pandoc

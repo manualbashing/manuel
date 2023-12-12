@@ -3,7 +3,27 @@
     justify-content: center;
 }
 
-/* Center all headlines */
-.page-header {
+/* Center the title */
+.post-header h1 {
     text-align: center;
 }
+
+/* Center all headlines */
+.page-header {
+    margin-top: 1em;
+    text-align: center;
+}
+
+/* Rounded edges on all images */
+img {
+    border-radius: var(--radius);
+    pointer-events: none;
+    width: 100%;
+    height: auto;
+  }
+
+
+  /*  Better visibility of list items  */
+.post-content ul li {
+    margin-left: 1em;
+  }
