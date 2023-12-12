@@ -43,6 +43,7 @@ You will be prompted to choose a file location under which you want to save the 
 ![export-zotero-library-path.png](images/export-zotero-library-path.png)
 
 {{% callout emoji="😉" text="Be sure to write down the full path to your exported library file, as we will need it later." %}}
+
 ### Enable and configure the citation plugin in Obsidian
 
 In Obsidian go to settings and enable Community plugins. Once that is done, click `[Browse]` and search for the "Citations" Plugin by Jon Gauthier:[^2]
@@ -71,7 +72,7 @@ This will insert the citation key in the [Pandoc Citation syntax](https://pandoc
 - Multiple citations with page number: `[@smith1992, p. 12; @jones1992, p. 5]`
 - Inline citation `"According to @smith1992 bla..."`
 
-{{% callout emoji="📎" text="Also you might want to set yourself a convenient hotkey for the "Insert markdown citation command". I am using `Ctrl-O`. " %}}
+{{% callout emoji="📎" text="Also you might want to set yourself a convenient hotkey for the `Citations: Insert markdown citation` command. I am using `Ctrl-O` " %}}
 ## Export a markdown document with citations to MS Word
 
 - Install Pandoc
